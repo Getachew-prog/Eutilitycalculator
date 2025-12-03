@@ -3,7 +3,6 @@ from customer.customerservice import register_customer, list_customers
 from appliance.applianceservice import register_appliance, list_appliances, appliances
 from calculator.consumptioncalculator import calculate_monthly_kwh
 from calculator.billcalculater import calculate_bill
-
 def main_menu():
     while True:
         print("\n------ Electricity Billing System ------")
