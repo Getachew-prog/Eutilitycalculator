@@ -1,7 +1,6 @@
 
 def calculate_monthly_kwh(appliances):
     total_kwh = 0
-
     print("\n--- Monthly Consumption Per Appliance ---")
     for a in appliances:
         kw = a['watt'] / 1000
@@ -10,6 +9,5 @@ def calculate_monthly_kwh(appliances):
         total_kwh += monthly_kwh
 
         print(f"{a['name']}: {monthly_kwh:} kWh")
-
     print(f"\nTOTAL Monthly Energy Consumption = {total_kwh:} kWh")
     return total_kwh
