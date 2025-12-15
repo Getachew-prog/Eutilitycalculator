@@ -3,10 +3,10 @@
 def create_appliance(name, wattage, hours_per_day, days_per_month):
     """Creates an appliance dictionary structure."""
     return {
-        'name': name,
+         'name': name,
         'wattage': wattage,
-        'hours_per_day': hours_per_day,
-        'days_per_month': days_per_month
+         'hours_per_day': hours_per_day,
+         'days_per_month': days_per_month
     }
 
 def register_appliance(customer_dict, name, wattage, hours_per_day, days_per_month):

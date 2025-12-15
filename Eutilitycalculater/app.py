@@ -1,10 +1,4 @@
-# eutilitycalculator/app.py
 
-import sys
-import os
-
-# Add the current directory to sys.path to make imports work easily
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import functions from modules
 from customer import customerservice as cs
@@ -28,11 +22,12 @@ def handle_customer_menu():
     print("\n--- Customer Menu ---")
     print("1. Register Customer")
     print("2. List Customers")
-    choice = input("Enter your choice (a/b): ").lower()
+    choice = input("Enter your choice : ")
 
     if choice == '1':
         customer_id = input("Enter Customer ID: ")
         name = input("Enter Customer Name: ")
+        
         # Pass the main database list to the function
         cs.register_customer(customers_db, customer_id, name)
     elif choice == '1':
@@ -53,7 +48,7 @@ def handle_appliance_menu():
 
     print("1. Register Appliance")
     print("2. List Appliances")
-    choice = input("Enter your choice (a/b): ").lower()
+    choice = input("Enter your choice : ")
 
     if choice == '1':
         try:
